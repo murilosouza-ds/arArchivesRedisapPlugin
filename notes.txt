@@ -1,0 +1,101 @@
+Teste modo noturno
+<div class="d-flex flex-wrap flex-lg-nowrap flex-grow-1" >
+          
+
+          <div class="ms-2 me-3">
+            <?php echo link_to(image_tag('/plugins/arArchivesRedisapPlugin/images/custom/unicamp-logo-white-cut', ['alt' => __('Unicamp logo'), 'class' => 'd-inline-block my-2', 'height' => '35']), 'https://unicamp.br'); ?>
+          </div>
+
+
+          
+          <?php echo get_component('menu', 'browseMenu', ['sf_cache_key' => 'dominion-b5'.$sf_user->getCulture().$sf_user->getUserID()]); ?>
+
+          
+          <div class="d-flex align-items-center header-dark-mode border-top py-3 py-lg-0">
+            <div class="dropdown dark-mode-dropdown"> 
+              <button class="btn btn-outline-secondary bs-theme-toggler dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)"> 
+                <span class="light icon"><i class="bi bi-brightness-high"></i></span> 
+                <span class="dark icon"><i class="bi bi-moon-fill"></i></span> 
+                <span class="auto icon"><i class="bi bi-circle-half"></i></i></span> 
+                <span class="visually-hidden bs-theme-toggler-text">Toggle theme</span> 
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="bs-theme-toggler-text">
+                <li> <button type="button" class="dropdown-item active" data-bs-theme-value="light" aria-pressed="true"> 
+                  <span class="light icon d-inline-block"><i class="bi bi-brightness-high"></i></span> 
+                  <span class="dropdown-item-description">Light</span> 
+                </button></li>
+                <li> 
+                  <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"> 
+                    <span class="dark icon d-inline-block"><i class="bi bi-moon-fill"></i></span> 
+                    <span class="dropdown-item-description">Dark</span> 
+                  </button>
+                </li>
+                <li> 
+                  <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false"> 
+                    <span class="auto icon d-inline-block"><i class="bi bi-circle-half"></i></span> 
+                    <span class="dropdown-item-description">Auto</span> 
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="d-flex align-items-center header-dark-mode border-top py-3 py-lg-0">
+            <div class="dropdown dark-mode-dropdown"> 
+              <button class="btn btn-outline-secondary bs-theme-toggler dropdown-toggle" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (light)"> 
+                <span class="light icon"><i class="fa-solid fa-sun"></i></span> 
+                <span class="dark icon"><i class="fa-solid fa-moon"></i></span> 
+                <span class="auto icon"><i class="fa-solid fa-circle-half-stroke"></i></span> 
+                <span class="visually-hidden bs-theme-toggler-text">Toggle theme</span> 
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="bs-theme-toggler-text">
+                <li> <button type="button" class="dropdown-item active" data-bs-theme-value="light" aria-pressed="true"> 
+                  <span class="light icon d-inline-block"><i class="fa-solid fa-sun"></i></span> 
+                  <span class="dropdown-item-description">Light</span> 
+                </button></li>
+                <li> 
+                  <button type="button" class="dropdown-item" data-bs-theme-value="dark" aria-pressed="false"> 
+                    <span class="dark icon d-inline-block"><i class="fa-solid fa-moon"></i></span> 
+                    <span class="dropdown-item-description">Dark</span> 
+                  </button>
+                </li>
+                <li> 
+                  <button type="button" class="dropdown-item" data-bs-theme-value="auto" aria-pressed="false"> 
+                    <span class="auto icon d-inline-block"><i class="fa-solid fa-circle-half-stroke"></i></span> 
+                    <span class="dropdown-item-description">Auto</span> 
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- <div class="btn-group" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+            </ul>
+          </div> -->
+          
+          
+          
+          <!-- <div class="me-3">
+            <button id="nightModeToggle" class="btn">🌙</button>
+          </div> -->
+
+          <!-- <div class="me-3" style="background-color:rgb(145, 182, 110);">
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+              <label class="btn btn-outline-primary" for="btnradio1"><i class="bi bi-brightness-high"></i></label>
+
+              <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btnradio2"><i class="bi bi-moon-fill"></i></label>
+
+            </div>
+          </div> -->
+
+          
+
+        </div>
