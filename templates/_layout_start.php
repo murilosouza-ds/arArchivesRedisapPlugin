@@ -15,9 +15,7 @@
 
     <script defer src="/dist/js/vendor.bundle.1697f26639ee588df9ee.js"></script>
     <script defer src="/dist/js/arDominionB5Plugin.bundle.e0fc15ed92535143cfc2.js"></script>
-    <!-- <link href="/dist/css/arDominionB5Plugin.bundle.754d1b52f116f8298b36.css" rel="stylesheet"> -->
     <link href="/dist/css/arArchivesRedisapPlugin.bundle.754d1b52f116f8298b36.css" rel="stylesheet">
-    <!-- <link href="/plugins/arArchivesRedisapPlugin/css/arArchivesRedisapPlugin.bundle.754d1b52f116f8298b36.css" rel="stylesheet"> -->
 
     <?php echo get_component_slot('css'); ?>
 
