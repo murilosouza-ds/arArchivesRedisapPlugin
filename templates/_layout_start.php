@@ -16,7 +16,7 @@
     <!-- important: hash files can change. Update! -->
     <script defer src="/dist/js/vendor.bundle.51cf3c3989802bda6211.js"></script>
     <script defer src="/dist/js/arDominionB5Plugin.bundle.ee01f345bf45cf8bd842.js"></script>
-    <link href="/dist/css/arDominionB5Plugin.bundle.5e47f9f2330e33f54f04.css" rel="stylesheet">
+    <link href="/dist/css/arArchivesRedisapPlugin.bundle.5e47f9f2330e33f54f04.css" rel="stylesheet">
 
     <?php echo get_component_slot('css'); ?>
 
