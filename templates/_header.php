@@ -48,38 +48,29 @@
               <?php echo get_component('menu', 'changeLanguageMenu'); ?>
             <?php } ?>
             <?php echo get_component('menu', 'quickLinksMenu'); ?>
+            
+            <button class="nav-link d-flex align-items-center p-0"
+              id="theme-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-label="Alterar aparência do site">
 
-            <li class="nav-item dropdown d-flex flex-column">
-              <a id="darkModeToggle" class="nav-link dropdown-toggle d-flex align-items-center p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i id="darkModeIcon" class="fas fa-2x fa-fw bi bi-circle-half px-0 px-lg-2 py-2" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-custom-class="d-none d-lg-block" title="" aria-hidden="true" data-bs-original-title="Aparência">
-                </i>
-                <span class="d-lg-none mx-1" aria-hidden="true">
-                  Aparência    </span>
-                <span class="visually-hidden">
-                  Aparência    </span>
-              </a>
+              <i class="fas fa-2x fa-fw fa-adjust px-0 px-lg-2 py-2"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-custom-class="d-none d-lg-block"
+                aria-hidden="true"
+                aria-label="Aparência" 
+                data-bs-original-title="Aparência">
+              </i>
 
-              <ul class="dropdown-menu dropdown-menu-end mb-2" aria-labelledby="darkModeToggle">
-                <li>
-                  <h6 class="dropdown-header"> Aparência </h6>
-                </li>
-                <li id="light_mode">
-                  <a class="dropdown-item" href="#" title="Modo Claro"  data-mode="light">
-                    <i class="bi bi-brightness-high-fill"></i> Claro
-                  </a>       
-                </li>
-                <li id="dark_mode">
-                  <a class="dropdown-item" href="#" title="Modo Escuro" data-mode="dark">
-                    <i class="bi bi-moon-stars-fill"></i> Escuro
-                  </a>
-                </li>
-                <li  id="auto_mode">
-                  <a class="dropdown-item" href="#" title="Modo Automático" data-mode="system">
-                    <i class="bi bi-circle-half"></i> Auto
-                  </a>
-                </li>
-              </ul>
-            </li>
+              <span class="d-lg-none mx-1" aria-hidden="true">
+                Aparência    </span>
+              <span class="visually-hidden">
+                Aparência    </span>  
+
+            </button>
+
 
           </ul>
           <?php echo get_component('menu', 'userMenu'); ?>

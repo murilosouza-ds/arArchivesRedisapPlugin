@@ -44,23 +44,4 @@ a.entity-rectangle:hover h5 {
     transform: scale(1.1); /* Aumenta a imagem em 20% */
 }
 
-
-/* Modo escuro */
-body.dark-mode {
-    background-color: #121212;
-    /* color: #ffffff; */
-    /* color: #121212; */
-    color: #aaa4a4;
-
-    .logos-archival {
-        background-color: #aaa4a4;
-        border-radius: 0.375rem;
-    }
-}
-
-#darkModeToggle.dark-mode {
-    background-color: #ffcc00;
-    color: #121212;
-}
-
   
