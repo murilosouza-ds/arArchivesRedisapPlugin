@@ -107,8 +107,8 @@
       </div>
            
       <div id="description" class="text-center text-wrap d-flex justify-content-center align-items-center mt-3" style="width: 100%; max-width: 700px;">
-        <h4 class="w-100 d-none d-md-block"><?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?></h4> 
-        <h6 class="w-100 d-md-none"><?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?></h6> 
+        <h4 class="w-100 d-none d-md-block" style="color: black"><?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?></h4> 
+        <h6 class="w-100 d-md-none"  style="color: black"><?php echo esc_specialchars(sfConfig::get('app_siteDescription')); ?></h6> 
       </div>
 
       <div id="search" class="d-flex justify-content-center mt-3" style="width:100%;">
