@@ -22,7 +22,7 @@
 
     <!-- customizations -->
     <script defer src="/plugins/arArchivesRedisapPlugin/custom-scripts.js"></script>
-    <link href="/plugins/arArchivesRedisapPlugin/custom-styles.css" rel="stylesheet" >
+    <!-- <link href="/plugins/arArchivesRedisapPlugin/custom-styles.css" rel="stylesheet" > -->
 
   </head>
 
