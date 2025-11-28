@@ -154,37 +154,37 @@
     <div class="container row mx-auto g-4 logos-archival" style="width: 70%;">
       <div class="col-6 col-md-6 col-xxl-4 d-flex justify-content-center align-items-center" style="flex-grow: 1;">
         <a href="https://www.siarq.unicamp.br" target="_blank" class="d-flex justify-content-center align-items-center"> 
-          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/siarq.png" class="zoom" alt="" style="width: 40%;">
+          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/siarq.png" class="zoom institution-logo rounded-1" alt="" style="width: 40%;">
         </a>
       </div>
 
       <div class="col-6 col-md-6 col-xxl-4 d-flex justify-content-center align-items-center" style="flex-grow: 1;">
         <a href="https://www.cle.unicamp.br/cle/pt-br/arquivos-historicos-cleunicamp" target="_blank" class="d-flex justify-content-center align-items-center"> 
-          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cle.png" class="zoom" alt="" style="width: 30%;">
+          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cle.png" class="zoom institution-logo rounded-1" alt="" style="width: 30%;">
         </a>
       </div>
 
       <div class="col-6 col-md-6 col-xxl-4 d-flex justify-content-center align-items-center" style="flex-grow: 1;">
         <a href="https://www.cmu.unicamp.br" target="_blank" class="d-flex justify-content-center align-items-center"> 
-          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cmu.png" class="zoom" alt="" style="width: 30%;">
+          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cmu.png" class="zoom institution-logo rounded-1" alt="" style="width: 30%;">
         </a>
       </div>
 
       <div class="col-6 col-md-6 col-xxl-4 d-flex justify-content-center align-items-center" style="flex-grow: 1;">
         <a href="https://ael.ifch.unicamp.br/" target="_blank" class="d-flex justify-content-center align-items-center"> 
-          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/ael.png" class="zoom" alt="" style="width: 40%;">
+          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/ael.png" class="zoom institution-logo rounded-1" alt="" style="width: 40%;">
         </a>
       </div>
 
       <div class="col-6 col-md-6 col-xxl-4 d-flex justify-content-center align-items-center" style="flex-grow: 1;">
         <a href="https://www.iel.unicamp.br/cedae-centro-de-documentacao-cultural" target="_blank" class="d-flex justify-content-center align-items-center"> 
-          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cedae.png" class="zoom" alt="" style="width: 35%;">
+          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cedae.png" class="zoom institution-logo rounded-1" alt="" style="width: 35%;">
         </a>
       </div>
 
       <div class="col-6 col-md-6 col-xxl-4 d-flex justify-content-center align-items-center" style="flex-grow: 1;">
         <a href="https://www.fcm.unicamp.br/fcm/centro-de-memoria-e-arquivo-cma" target="_blank" class="d-flex justify-content-center align-items-center"> 
-          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cma.png" class="zoom" alt="" style="width: 35%;">
+          <img src="/plugins/arArchivesRedisapPlugin/images/custom/archival/cma.png" class="zoom institution-logo rounded-1" alt="" style="width: 35%;">
         </a>
       </div>
 
