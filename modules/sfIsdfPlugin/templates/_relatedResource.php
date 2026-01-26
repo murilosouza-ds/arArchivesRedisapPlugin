@@ -15,14 +15,14 @@
   <div class="table-responsive">
     <table class="table table-bordered mb-0">
       <thead class="table-light">
-        <tr>
-          <th style="width: 30%">
+	<tr>
+          <th class="w-30">
             <?php echo __('Identifier/title'); ?>
           </th>
-          <th style="width: 40%">
+          <th class="w-40">
             <?php echo __('Nature of relationship'); ?>
           </th>
-          <th style="width: 30%">
+          <th class="w-30">
             <?php echo __('Dates'); ?>
           </th>
           <th>
@@ -119,8 +119,7 @@
                   $form->resource
                       ->label(__('Title'))
                       ->help(__(
-                        'Select the title from the drop-down menu; enter the identifier'
-                        .' or the first few letters to narrow the choices. (ISDF 6.1)'
+                        'Select the title from the drop-down menu; enter the identifier or the first few letters to narrow the choices. (ISDF 6.1)'
                       )),
                   null,
                   ['class' => 'form-autocomplete', 'extraInputs' => $extraInputs]

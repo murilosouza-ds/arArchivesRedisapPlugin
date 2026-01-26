@@ -11,21 +11,11 @@ import Tooltip from "bootstrap/js/dist/tooltip";
 
       this.storage = localStorage;
       this.types = ["informationObject", "actor", "repository"];
-      this.initialItems = JSON.stringify({
-        informationObject: [],
-        actor: [],
-        repository: [],
-      });
-      this.items = JSON.parse(this.storage.getItem("clipboard"));
-      this.exportTokens = JSON.parse(this.storage.getItem("exportTokens"));
-
-      if (!this.items) {
-        this.items = JSON.parse(this.initialItems);
-      }
-
-      if (!this.exportTokens) {
-        this.exportTokens = [];
-      }
+      this.initialItems = { informationObject: [], actor: [], repository: [] };
+      this.items =
+        JSON.parse(this.storage.getItem("clipboard")) || this.initialItems;
+      this.exportTokens =
+        JSON.parse(this.storage.getItem("exportTokens")) || [];
 
       this.init();
     }
@@ -72,6 +62,7 @@ import Tooltip from "bootstrap/js/dist/tooltip";
 
       var $form = $(event.target);
       var mode = $form.find("select#mode").val();
+      var loadType = $(document.activeElement).attr("name");
 
       $.ajax({
         url: $form.attr("action"),
@@ -97,6 +88,10 @@ import Tooltip from "bootstrap/js/dist/tooltip";
           this.storage.setItem("clipboard", JSON.stringify(this.items));
           this.updateCounts();
           this.showAlert(data.success, "alert-info");
+
+          if (loadType == "loadView") {
+            window.location.href = "/clipboard/view";
+          }
         },
         error: function (xhr) {
           var data = JSON.parse(xhr.responseText);
@@ -181,21 +176,46 @@ import Tooltip from "bootstrap/js/dist/tooltip";
         return;
       }
 
+      let $form = $("<form />", {
+        id: "sendForm",
+        action: $sendButton.data("url"),
+        method: $sendButton.data("method"),
+      });
+
       // Generate clipboard send data
-      var data = { base_url: $sendButton.data("site-base-url") };
+      let $baseUrl = $("<input />", {
+        type: "hidden",
+        name: "base_url",
+        value: $sendButton.data("site-base-url"),
+      });
+
+      $form.append($baseUrl);
 
       if (this.items["informationObject"].length !== 0) {
-        data.informationobject_slugs = JSON.stringify(
-          this.items["informationObject"]
-        );
+        let $informationobjectSlugs = $("<input />", {
+          type: "hidden",
+          name: "information_object_slugs",
+          value: JSON.stringify(this.items["informationObject"]),
+        });
+        $form.append($informationobjectSlugs);
       }
 
       if (this.items["actor"].length !== 0) {
-        data.actor_slugs = JSON.stringify(this.items["actor"]);
+        let $actorSlugs = $("<input />", {
+          type: "hidden",
+          name: "actor_slugs",
+          value: JSON.stringify(this.items["actor"]),
+        });
+        $form.append($actorSlugs);
       }
 
       if (this.items["repository"].length !== 0) {
-        data.repository_slugs = JSON.stringify(this.items["repository"]);
+        let $repositorySlugs = $("<input />", {
+          type: "hidden",
+          name: "repository_slugs",
+          value: JSON.stringify(this.items["repository"]),
+        });
+        $form.append($repositorySlugs);
       }
 
       // Show sending alert and assign it to a variable
@@ -204,17 +224,8 @@ import Tooltip from "bootstrap/js/dist/tooltip";
         "alert-info"
       );
 
-      $.ajax({
-        url: $sendButton.data("url"),
-        type: $sendButton.data("method"),
-        cache: false,
-        data: data,
-        context: this,
-        complete: function () {
-          // Remove alert on error and success
-          $sendingAlert.remove();
-        },
-      });
+      $form.appendTo(document.body);
+      $form.submit();
     }
 
     export(event) {
@@ -317,6 +328,11 @@ import Tooltip from "bootstrap/js/dist/tooltip";
         event.preventDefault();
       }
 
+      // Load items from local storage in case activity
+      // in another tab has changed the content
+      this.items =
+        JSON.parse(this.storage.getItem("clipboard")) || this.initialItems;
+
       var $button = $(event.target).closest("button");
       var type = $button.data("clipboard-type");
       var slug = $button.data("clipboard-slug");
@@ -355,7 +371,7 @@ import Tooltip from "bootstrap/js/dist/tooltip";
       if (type && this.types.includes(type)) {
         this.items[type] = [];
       } else {
-        this.items = JSON.parse(this.initialItems);
+        this.items = this.initialItems;
       }
 
       this.storage.setItem("clipboard", JSON.stringify(this.items));

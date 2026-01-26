@@ -6,13 +6,13 @@
   <table class="table table-bordered mb-0 multi-row">
     <thead class="table-light">
       <tr>
-        <th id="dc-dates-date-head" style="width: 40%">
+        <th id="dc-dates-date-head" class="w-40">
           <?php echo __('Date'); ?>
         </th>
-        <th id="dc-dates-start-head" style="width: 30%">
+        <th id="dc-dates-start-head" class="w-30">
           <?php echo __('Start'); ?>
         </th>
-        <th id="dc-dates-end-head" style="width: 30%">
+        <th id="dc-dates-end-head" class="w-30">
           <?php echo __('End'); ?>
         </th>
         <th>
@@ -21,8 +21,10 @@
       </tr>
     </thead>
     <tbody>
-      <?php $i = 0; foreach ($resource->getDates() as $item) { ?>
-        <?php $form->getWidgetSchema()->setNameFormat("editDates[{$i}][%s]"); ++$i; ?>
+      <?php $i = 0;
+      foreach ($resource->getDates() as $item) { ?>
+        <?php $form->getWidgetSchema()->setNameFormat("editDates[{$i}][%s]");
+        ++$i; ?>
 
         <tr class="date related_obj_<?php echo $item->id; ?>">
           <td>
@@ -112,13 +114,6 @@
 
 <div class="form-text mb-3" id="dc-dates-table-help">
   <?php echo __(
-      'Identify and record the date(s) of the unit of description.'
-      .' Identify the type of date given. Record as a single date or a'
-      .' range of dates as appropriate. The Date display field can be'
-      .' used to enter free-text date information, including typographical'
-      .' marks to express approximation, uncertainty, or qualification.'
-      .' Use the start and end fields to make the dates searchable. Do not'
-      .' use any qualifiers or typographical symbols to express uncertainty.'
-      .' Acceptable date formats: YYYYMMDD, YYYY-MM-DD, YYYY-MM, YYYY.'
+      'Identify and record the date(s) of the unit of description. Identify the type of date given. Record as a single date or a range of dates as appropriate. The Date display field can be used to enter free-text date information, including typographical marks to express approximation, uncertainty, or qualification. Use the start and end fields to make the dates searchable. Do not use any qualifiers or typographical symbols to express uncertainty. Acceptable date formats: YYYYMMDD, YYYY-MM-DD, YYYY-MM, YYYY.'
   ); ?>
 </div>

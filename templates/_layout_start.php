@@ -21,8 +21,8 @@
     <?php echo get_component_slot('css'); ?>
 
     <!-- customizations -->
+     <!-- TODO: include in the main .js file  -->
     <script defer src="/plugins/arArchivesRedisapPlugin/custom-scripts.js"></script>
-    <!-- <link href="/plugins/arArchivesRedisapPlugin/custom-styles.css" rel="stylesheet" > -->
 
   </head>
 

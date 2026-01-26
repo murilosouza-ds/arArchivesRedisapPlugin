@@ -22,13 +22,13 @@
     <table class="table table-bordered mb-0 multi-row">
       <thead class="table-light">
         <tr>
-          <th id="alt-identifiers-type-head" style="width: 30%">
+          <th id="alt-identifiers-type-head" class="w-30">
             <?php echo __('Type'); ?>
           </th>
-          <th id="alt-identifiers-identifier-head" style="width: 35%">
+          <th id="alt-identifiers-identifier-head" class="w-35">
             <?php echo __('Identifier'); ?>
           </th>
-          <th id="alt-identifiers-note-head" style="width: 35%">
+          <th id="alt-identifiers-note-head" class="w-35">
             <?php echo __('Notes'); ?>
           </th>
           <th>
@@ -37,8 +37,10 @@
         </tr>
       </thead>
       <tbody>
-        <?php $i = 0; foreach ($alternativeIdentifierData as $identifier) { ?>
-          <?php $form->getWidgetSchema()->setNameFormat("alternativeIdentifiers[{$i}][%s]"); ++$i; ?>
+        <?php $i = 0;
+        foreach ($alternativeIdentifierData as $identifier) { ?>
+          <?php $form->getWidgetSchema()->setNameFormat("alternativeIdentifiers[{$i}][%s]");
+          ++$i; ?>
 
           <tr class="related_obj_<?php echo $identifier['id']; ?>">
             <td>
@@ -128,10 +130,7 @@
 
   <div class="form-text mb-3" id="alt-identifiers-table-help">
     <?php echo __(
-        '<strong>Type:</strong> Enter a name for the alternative identifier field that'
-        .' indicates its purpose and usage.<br/><strong>Identifier:</strong> Enter a'
-        .' legacy reference code, alternative identifier, or any other alpha-numeric'
-        .' string associated with the record.'
+        '<strong>Type:</strong> Enter a name for the alternative identifier field that indicates its purpose and usage.<br/><strong>Identifier:</strong> Enter a legacy reference code, alternative identifier, or any other alpha-numeric string associated with the record.'
     ); ?>
   </div>
 </div>

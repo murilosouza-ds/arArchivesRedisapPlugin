@@ -7,10 +7,10 @@
   <table class="table table-bordered mb-0 multi-row">
     <thead class="table-light">
       <tr>
-        <th id="isad-events-type-head" style="width: 25%">
+        <th id="isad-events-type-head" class="w-25">
           <?php echo __('Type'); ?>
         </th>
-        <th id="isad-events-date-head" style="width: 30%">
+        <th id="isad-events-date-head" class="w-30">
           <?php echo __('Date'); ?>
         </th>
         <th id="isad-events-start-head">
@@ -25,8 +25,10 @@
       </tr>
     </thead>
     <tbody>
-      <?php $i = 0; foreach ($resource->getDates() as $item) { ?>
-        <?php $form->getWidgetSchema()->setNameFormat("editEvents[{$i}][%s]"); ++$i; ?>
+      <?php $i = 0;
+      foreach ($resource->getDates() as $item) { ?>
+        <?php $form->getWidgetSchema()->setNameFormat("editEvents[{$i}][%s]");
+        ++$i; ?>
 
         <tr class="date related_obj_<?php echo $item->id; ?>">
           <td>

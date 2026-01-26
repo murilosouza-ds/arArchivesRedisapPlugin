@@ -88,7 +88,7 @@
                 </div>
               <?php } ?>
 
-              <div class="form-item">
+	      <div class="form-item">
                 <div class="panel panel-default" id="matchingOptions" style="display:none;">
                   <div class="panel-body">
                     <div class="mb-3 form-check">

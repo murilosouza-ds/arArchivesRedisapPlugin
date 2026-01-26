@@ -1,8 +1,6 @@
 // Custom
 $atom-gray-box-shadow: 0 0 0 0.25rem #ced4da !default;
 
-// $atom-gray-box-shadow: 0 0 0 0.25rem #f0ecec !default;
-
 // Bootstrap
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -15,7 +13,7 @@ $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
-$orange: #f60 !default;
+$orange: #c44e00 !default;
 $blue: #0a58ca !default;
 $primary: $orange !default;
 $secondary: $gray-700 !default;
@@ -43,9 +41,9 @@ $spacer: 1rem !default;
 $dropdown-min-width: $spacer * 15 !default;
 $tooltip-bg: $gray-900 !default;
 $tooltip-opacity: 1 !default;
-$font-weight-bold: 500 !default;
-$font-weight-bolder: 500 !default;
-$table-th-font-weight: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 700 !default;
+$table-th-font-weight: 700 !default;
 $headings-font-weight: 400 !default;
 $headings-margin-bottom: $spacer !default;
 $h1-font-size: $spacer * 2 !default;

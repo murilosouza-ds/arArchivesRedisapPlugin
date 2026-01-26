@@ -6,10 +6,10 @@
   <table class="table table-bordered mb-0 multi-row">
     <thead class="table-light">
       <tr>
-        <th id="dc-names-actor-head" style="width: 60%">
+        <th id="dc-names-actor-head" class="w-60">
           <?php echo __('Actor name'); ?>
         </th>
-        <th id="dc-names-type-head" style="width: 40%">
+        <th id="dc-names-type-head" class="w-40">
           <?php echo __('Type'); ?>
         </th>
         <th>
@@ -18,9 +18,11 @@
       </tr>
     </thead>
     <tbody>
-      <?php $i = 0; foreach ($resource->getActorEvents() as $item) { ?>
+      <?php $i = 0;
+      foreach ($resource->getActorEvents() as $item) { ?>
         <?php if (isset($item->actor)) { ?>
-          <?php $form->getWidgetSchema()->setNameFormat("editNames[{$i}][%s]"); ++$i; ?>
+          <?php $form->getWidgetSchema()->setNameFormat("editNames[{$i}][%s]");
+          ++$i; ?>
 
           <tr class="related_obj_<?php echo $item->id; ?>">
             <td>
