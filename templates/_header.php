@@ -89,7 +89,7 @@
             <a class="text-white" title="Voltar à página inicial" href="/">INÍCIO</a>
           </div>
           <div class="col-4 text-center">
-            <a class="text-white" title="Como pesquisar" href="http://docs.accesstomemory.org/">AJUDA</a>
+            <a class="text-white" title="Material de apoio" href="/apoio">APOIO</a>
           </div>
           <div class="col-4 text-end">
             <a class="text-white" title="Sobre o ReDiSAP" href="/about">SOBRE</a>
